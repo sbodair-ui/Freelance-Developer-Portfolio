@@ -1,306 +1,367 @@
-# # Freelance Software Developer
+# Freelance Software Developer
 
-### Building practical software solutions that solve real business problems.
+### Building practical software solutions for real-world problems.
 
-I’m a **Software Developer** specializing in building reliable, maintainable, and practical software solutions for businesses, organizations, and individuals.
+I’m a **Software Developer** specializing in building reliable, maintainable, and practical software for businesses, organizations, independent professionals, and game developers.
 
-My development experience spans **Python, C#, Java, JavaScript, and C++**, with additional experience in databases, APIs, web development, data analytics, artificial intelligence, cybersecurity, and application development.
+My development background spans **Python, C#, JavaScript, C++, and Java**, with additional experience in databases, APIs, web development, data analytics, artificial intelligence, cybersecurity, and Unity game development.
 
-I focus on understanding the problem first, then building a solution that is **useful, maintainable, and designed around the client's needs**.
+I approach every project by first understanding the **problem, users, goals, and requirements**—then designing and building a solution that provides meaningful value.
 
 ---
 
-## 💼 What I Can Build
+# 💻 What I Build
 
-### 🐍 Python Development
+My freelance development work is organized around four primary areas:
 
-* Business automation
-* Data processing and transformation
-* Custom scripts and utilities
-* API integrations
+|                         | Focus                              | Typical Solutions                                                 |
+| ----------------------- | ---------------------------------- | ----------------------------------------------------------------- |
+| 🐍 **Python**           | Automation, Data, AI & Tools       | Automation systems, data processing, APIs, custom tools           |
+| 🎮 **C# / Unity**       | Game & Interactive Development     | Gameplay systems, mechanics, tools, interactive applications      |
+| 🌐 **JavaScript / Web** | Websites & Web Applications        | Business websites, web apps, dashboards, APIs                     |
+| ⚙️ **C++**              | Applications & Systems Programming | Utilities, applications, algorithms, performance-focused software |
+
+---
+
+# 🐍 Python Development
+
+### Automation • Data • AI • Custom Tools
+
+I use Python to build practical solutions that automate repetitive work, process information, and turn complex workflows into efficient software.
+
+### Services
+
+* Business process automation
+* CSV and Excel processing
+* Data cleaning and transformation
+* Automated reporting
+* API integration
 * Data analysis
 * AI and machine learning applications
-* Custom tools and applications
+* Custom scripts and utilities
+* Command-line tools
+* Custom Python applications
 
-### 🌐 Web Development
+### Example Solutions
+
+**Business Report Automation**
+Automate data collection, processing, analysis, and report generation.
+
+**Data Processing Tools**
+Transform large or inconsistent datasets into clean, usable information.
+
+**Custom Automation**
+Replace repetitive manual workflows with reliable software.
+
+---
+
+# 🎮 C# / Unity Game Development
+
+### Gameplay Systems • Game Mechanics • Unity Tools
+
+I develop **C# and Unity systems for games and interactive applications**, with a particular interest in supporting indie developers and small development teams.
+
+### Services
+
+* Gameplay systems
+* Game mechanics
+* Quest systems
+* Dialogue systems
+* Inventory systems
+* Character systems
+* Save/load systems
+* Enemy AI
+* Unity tools
+* Editor tools
+* Interactive applications
+* Educational games
+
+### Example Solutions
+
+**Modular Quest System**
+Reusable quest, objective, reward, and progression systems.
+
+**Inventory System**
+Flexible inventory architecture designed for reuse across different game projects.
+
+**Unity Game Tools**
+Custom tools designed to make development and content creation more efficient.
+
+My goal is to build **reusable, maintainable systems that developers can integrate into larger projects**, rather than simply creating one-off demonstrations.
+
+---
+
+# 🌐 JavaScript / Web Development
+
+### Websites • Web Applications • APIs
+
+I build responsive and interactive web solutions designed around the needs of businesses and organizations.
+
+### Services
 
 * Business websites
-* Interactive web applications
-* Custom JavaScript functionality
+* Interactive websites
+* Web applications
+* Dashboards
+* Project management applications
+* Data-entry systems
+* API integration
 * Front-end development
-* Backend applications
-* API integrations
 * Database-driven applications
+* Custom JavaScript functionality
 
-### 🔷 C# Development
+### Example Solutions
 
-* Business applications
-* Desktop applications
-* Custom utilities
-* Object-oriented applications
-* Unity applications and interactive software
+**Business Web Application**
+A custom application designed around a specific organizational workflow.
 
-### ☕ Java Development
+**Project Management Application**
+Manage projects, tasks, deadlines, status, and progress from a centralized interface.
 
-* Business applications
-* Object-oriented software
-* Data-driven applications
-* Educational applications
-* Backend development
+**Interactive Dashboard**
+Present important business information in an accessible, user-friendly format.
 
-### ⚙️ C++ Development
+---
+
+# ⚙️ C++ Development
+
+### Applications • Algorithms • Systems Programming
+
+I use C++ to develop applications and technical software where performance, control, and efficient programming are important.
+
+### Services
 
 * Application development
 * Object-oriented programming
 * Algorithms and data structures
-* Performance-focused applications
-* Custom software utilities
-
----
-
-# 🛠️ Services
-
-## Software Development
-
-Need a custom application or software tool?
-
-I can help turn an idea, workflow, or business requirement into a working software solution.
-
-**Examples:**
-
-* Custom business applications
-* Internal tools
-* Utility applications
-* Data management systems
-* Automation software
-* Educational software
-
----
-
-## ⚡ Business Automation
-
-If your team repeatedly performs the same manual task, there may be an opportunity to automate it.
-
-I can develop tools that automate workflows involving:
-
-* CSV and Excel data
-* Reports
 * File processing
-* Data transformation
-* Repetitive administrative tasks
-* API communication
-* Data validation
-
-The goal is simple:
-
-**Reduce repetitive work and give people more time to focus on higher-value tasks.**
-
----
-
-## 📊 Data & Analytics
-
-I can help transform raw data into useful information.
-
-Services can include:
-
-* Data cleaning
-* Data transformation
 * Data processing
-* Database development
-* SQL queries
-* Data analysis
-* Automated reporting
-* Visualization
-* Tableau integration
+* Command-line utilities
+* Performance-focused applications
+* Custom developer tools
+
+### Example Solutions
+
+**File Processing Utility**
+Process, validate, transform, and organize large collections of files or data.
+
+**C++ Application**
+A structured application demonstrating object-oriented design, algorithms, data structures, and software engineering practices.
 
 ---
 
-## 🌐 Web Applications
+# 🛠️ Technologies
 
-I can develop lightweight web applications designed around specific business or organizational needs.
+### Programming Languages
 
-Examples include:
+`Python` `C#` `JavaScript` `C++` `Java`
 
-* Customer management systems
-* Inventory systems
-* Project tracking tools
-* Internal dashboards
-* Scheduling applications
-* Data-entry systems
-* Educational applications
-
----
-
-# 🔧 Technologies
-
-### Languages
-
-`Python` `C#` `Java` `JavaScript` `C++`
-
-### Web
+### Web Development
 
 `HTML` `CSS` `JavaScript` `APIs`
 
-### Data
+### Data & Analytics
 
-`SQL` `Tableau` `Data Analytics` `Data Processing`
+`SQL` `Tableau` `Data Processing` `Data Analysis`
 
-### Development
+### Software Development
 
 `Git` `GitHub` `Object-Oriented Programming` `Testing` `Debugging`
 
-### Additional Areas
+### Additional Technologies & Areas
 
-`Artificial Intelligence` `Machine Learning` `Cybersecurity` `Unity`
-
----
-
-# 📂 Selected Projects
-
-This portfolio is being developed around **real-world, client-style projects** rather than simple programming exercises.
-
-### Business Automation
-
-Automated workflows designed to reduce repetitive manual processes and improve data handling.
-
-**Technologies:** Python, Data Processing, APIs
+`Unity` `Artificial Intelligence` `Machine Learning` `Cybersecurity`
 
 ---
 
-### Inventory Management System
+# 📂 Portfolio Projects
 
-A business-oriented application for managing products, inventory levels, and records.
+This portfolio focuses on **client-style projects** designed to demonstrate practical software development rather than simple programming exercises.
 
-**Technologies:** C#, Object-Oriented Programming, Database Development
+## 🐍 Python
 
----
+### [Python Business Automation](./Python-Business-Automation)
 
-### Project Management Application
+Automating repetitive business processes through data processing, validation, reporting, and workflow automation.
 
-A web-based application for managing projects, tasks, deadlines, and progress.
+**Focus:** Python • Automation • Data Processing
 
-**Technologies:** JavaScript, Web Development, APIs, Database
+### [Python Data Processing](./Python-Data-Processing)
 
----
+Tools for cleaning, transforming, analyzing, and preparing data for further use.
 
-### Data Analysis & Reporting
-
-Applications that transform raw data into useful reports and visualizations.
-
-**Technologies:** Python, SQL, Tableau
+**Focus:** Python • Data • Analytics
 
 ---
 
-### Educational Software
+## 🎮 C# / Unity
 
-Interactive applications designed to support teaching, learning, and technical skill development.
+### [C# Unity Quest System](./CSharp-Unity-Quest-System)
 
-**Technologies:** Python, JavaScript, C#, Unity
+A modular quest and progression system designed for integration into Unity game projects.
+
+**Focus:** C# • Unity • Gameplay Systems
+
+### [C# Unity Inventory System](./CSharp-Unity-Inventory-System)
+
+A reusable inventory system designed for games and interactive applications.
+
+**Focus:** C# • Unity • Game Systems
+
+### [C# Unity Game Tools](./CSharp-Unity-Game-Tools)
+
+Custom Unity tools designed to improve development workflows and content creation.
+
+**Focus:** C# • Unity • Developer Tools
 
 ---
 
-# 🧩 My Development Approach
+## 🌐 JavaScript / Web
 
-I believe good software development starts **before writing code**.
+### [JavaScript Business Web App](./JavaScript-Business-Web-App)
 
-### 1. Understand
+A web application demonstrating practical business-oriented functionality and interactive user experiences.
 
-I begin by understanding the client's goals, workflow, users, and problems.
+**Focus:** JavaScript • Web Development • APIs
 
-### 2. Plan
+### [JavaScript Project Management](./JavaScript-Project-Management)
 
-I identify the requirements, technical approach, scope, and potential challenges.
+A project management application for organizing projects, tasks, deadlines, and progress.
 
-### 3. Build
+**Focus:** JavaScript • Web Applications • Data Management
 
-I develop the solution using appropriate technologies and software engineering practices.
+---
 
-### 4. Test
+## ⚙️ C++
 
-I test functionality, identify problems, and refine the application.
+### [C++ Application](./CPlusPlus-Application)
 
-### 5. Deliver
+A C++ application demonstrating object-oriented programming, application architecture, algorithms, and software engineering practices.
 
-I provide organized code and documentation designed to make the solution understandable and maintainable.
+**Focus:** C++ • OOP • Application Development
 
-### 6. Improve
+### [C++ File Processing](./CPlusPlus-File-Processing)
 
-Software can evolve as the needs of the business or organization change.
+A utility for processing, validating, transforming, and managing files and data.
+
+**Focus:** C++ • File Processing • Data Handling
+
+---
+
+# 🧩 How I Approach Development
+
+Good software development starts **before writing code**.
+
+### 01 — Understand
+
+I identify the problem, users, goals, requirements, and constraints.
+
+### 02 — Plan
+
+I determine the appropriate technology, architecture, features, and development approach.
+
+### 03 — Build
+
+I develop the solution using organized, maintainable, and documented code.
+
+### 04 — Test
+
+I test functionality, identify problems, handle edge cases, and refine the solution.
+
+### 05 — Deliver
+
+I provide organized software and documentation that make the solution understandable and maintainable.
+
+### 06 — Improve
+
+Software can evolve as requirements change. I design solutions with future improvements in mind.
 
 ---
 
 # 🎯 Who I Work With
 
-I am particularly interested in working with:
+I am interested in working with:
 
 * Small businesses
 * Startups
-* Educators
-* Schools and educational organizations
-* Nonprofits
 * Independent professionals
+* Nonprofit organizations
+* Educational organizations
+* Entrepreneurs
+* Indie game developers
+* Small game development teams
 * Organizations that need custom internal tools
 * Individuals with software ideas
 
-I am especially interested in projects where **off-the-shelf software doesn't quite fit the problem** and a custom solution can provide meaningful value.
+I'm particularly interested in projects where **existing software doesn't quite solve the problem** and a custom solution can provide additional value.
 
 ---
 
 # 🌟 Why Work With Me?
 
-### Technical Breadth
+### Problem-Focused Development
 
-Experience across multiple programming languages and technology areas allows me to choose the appropriate tool for the problem rather than forcing every project into one technology.
+I don't believe software should be built simply because something can be programmed.
 
-### Practical Problem Solving
+I start with the problem and work toward the simplest practical solution that meets the project's goals.
 
-I focus on solving the underlying problem—not simply writing code.
+### Broad Technical Background
+
+Experience across Python, C#, JavaScript, C++, databases, APIs, data, AI, and Unity allows me to approach projects from multiple technical perspectives.
+
+### Game Development Experience
+
+My C# and Unity work focuses on **reusable game systems, mechanics, tools, and interactive experiences** that can serve as building blocks for larger projects.
 
 ### Clear Communication
 
-My experience in Computer Science education has strengthened my ability to explain technical concepts clearly to both technical and non-technical audiences.
+My background in Computer Science education has strengthened my ability to explain technical concepts clearly to both technical and non-technical audiences.
 
 ### Maintainable Software
 
-I prioritize readable code, logical architecture, documentation, testing, and practices that make future maintenance easier.
+I prioritize readable code, logical organization, documentation, testing, and development practices that make software easier to maintain and extend.
 
-### Continuous Learning
+### Continuous Development
 
-Technology changes quickly. I continuously expand my skills and explore new tools, frameworks, and development practices.
+I continuously expand my technical skills and explore new technologies, tools, and development practices.
 
 ---
 
 # 📈 Current Focus
 
-I am currently expanding my freelance development portfolio with projects focused on:
+I'm currently expanding this portfolio with increasingly sophisticated projects in:
 
-* Python automation
-* Business applications
-* Web development
-* Data analytics
-* AI and machine learning
-* Educational technology
-* Custom software solutions
+* 🐍 Python automation and data solutions
+* 🎮 C# / Unity game development
+* 🌐 JavaScript web applications
+* ⚙️ C++ application development
+* 🤖 Artificial intelligence and machine learning
+* 📊 Data analytics and visualization
+* 🛠️ Custom software tools
 
 ---
 
-# 📬 Interested in Working Together?
+# 📬 Let's Build Something
 
 Have a repetitive process that could be automated?
 
 Need a custom application?
 
-Have an idea for a web or educational application?
+Building an indie game and need a gameplay system or Unity tool?
 
-Need help turning data into something useful?
+Need a website or web application?
 
-**Let's discuss the problem and explore what a practical software solution could look like.**
+Have an idea that needs to become working software?
+
+**I'd be interested in hearing about it.**
+
+The first step is understanding the problem and determining whether a custom software solution is the right approach.
 
 ---
 
-## 🔗 Portfolio & Contact
+# 🔗 Connect
 
-**GitHub:** [sbodair-ui](https://github.com/sbodair-ui)
+**GitHub:** [@sbodair-ui](https://github.com/sbodair-ui)
 
 **LinkedIn:** Coming Soon
 
@@ -310,7 +371,8 @@ Need help turning data into something useful?
 
 ---
 
-### Software should solve problems—not create more of them.
+### Build practical. Solve problems. Create useful software.
 
 **Let's build something useful.**
+
 
