@@ -3,7 +3,7 @@ from pathlib import Path
 import pandas as pd
 
 def create_sample_data():
-"""Create sample sales data for the Excel Report Generator."""
+    """Create sample sales data for the Excel Report Generator."""
 
 ```
 data = {
@@ -81,7 +81,7 @@ dataframe.to_excel(
 print(f"Sample data created: {output_file}")
 ```
 
-if **name** == "**main**":
+if __name__ == "__main__":
 create_sample_data()
 
 
