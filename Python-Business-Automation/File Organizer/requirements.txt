@@ -1,5 +1,5 @@
-# No external dependencies.
+# No external dependencies are required for the application itself.
 # This project uses Python's standard library only.
 
-
+# Development and testing dependency
 pytest
