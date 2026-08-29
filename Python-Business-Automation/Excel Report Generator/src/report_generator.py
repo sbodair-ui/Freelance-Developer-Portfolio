@@ -42,7 +42,7 @@ dataframe["Revenue"] = (
     * dataframe["Unit Price"]
 )
 
-return dataframe
+    return dataframe
 
 def calculate_business_metrics(
 dataframe: pd.DataFrame,
@@ -92,7 +92,7 @@ product_performance = (
     )
 )
 
-return product_performance
+    return product_performance
 
 def analyze_category_performance(
 dataframe: pd.DataFrame,
@@ -118,7 +118,7 @@ category_performance = (
     )
 )
 
-return category_performance
+    return category_performance
 
 def generate_excel_report(
 metrics: dict,
@@ -230,6 +230,6 @@ except (
 
     print(f"\nError: {error}")
 
-if **name** == "**main**":
+if __name__ == "__main__":
 main()
 
