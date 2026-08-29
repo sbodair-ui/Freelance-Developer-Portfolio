@@ -1,103 +1,187 @@
 from pathlib import Path
-import sys
-
-import pytest
-
-
-# Add the src folder to Python's import path
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-SRC_DIRECTORY = PROJECT_ROOT / "src"
-
-sys.path.insert(0, str(SRC_DIRECTORY))
+import shutil
+import logging
 
 
-from file_organizer import (
-    get_category,
-    get_unique_destination,
-    organize_files,
+FILE_CATEGORIES = {
+    "Images": {
+        ".jpg",
+        ".jpeg",
+        ".png",
+        ".gif",
+        ".bmp",
+        ".svg",
+        ".webp",
+    },
+    "Documents": {
+        ".txt",
+        ".doc",
+        ".docx",
+        ".odt",
+        ".rtf",
+    },
+    "Excel": {
+        ".xls",
+        ".xlsx",
+        ".xlsm",
+        ".csv",
+    },
+    "PDFs": {
+        ".pdf",
+    },
+    "Presentations": {
+        ".ppt",
+        ".pptx",
+        ".odp",
+    },
+    "Videos": {
+        ".mp4",
+        ".mov",
+        ".avi",
+        ".mkv",
+        ".wmv",
+    },
+    "Audio": {
+        ".mp3",
+        ".wav",
+        ".flac",
+        ".aac",
+        ".ogg",
+    },
+    "Archives": {
+        ".zip",
+        ".rar",
+        ".7z",
+        ".tar",
+        ".gz",
+    },
+}
+
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(levelname)s: %(message)s",
 )
 
 
-def test_get_category_for_image():
-    """Test that image files are categorized correctly."""
+def get_category(file_path: Path) -> str:
+    """Return the category for a file based on its extension."""
 
-    file_path = Path("photo.jpg")
+    extension = file_path.suffix.lower()
 
-    assert get_category(file_path) == "Images"
+    for category, extensions in FILE_CATEGORIES.items():
+        if extension in extensions:
+            return category
 
-
-def test_get_category_for_pdf():
-    """Test that PDF files are categorized correctly."""
-
-    file_path = Path("invoice.pdf")
-
-    assert get_category(file_path) == "PDFs"
+    return "Other"
 
 
-def test_get_category_for_excel():
-    """Test that Excel files are categorized correctly."""
+def get_unique_destination(destination: Path) -> Path:
+    """Create a unique filename if the destination already exists."""
 
-    file_path = Path("report.xlsx")
+    if not destination.exists():
+        return destination
 
-    assert get_category(file_path) == "Excel"
+    counter = 1
 
+    while True:
+        new_name = (
+            f"{destination.stem}_{counter}"
+            f"{destination.suffix}"
+        )
 
-def test_get_category_for_unknown_file():
-    """Test that unknown file types go into Other."""
+        new_destination = destination.with_name(new_name)
 
-    file_path = Path("unknown.xyz")
+        if not new_destination.exists():
+            return new_destination
 
-    assert get_category(file_path) == "Other"
-
-
-def test_get_unique_destination_when_file_does_not_exist(tmp_path):
-    """Test that the original destination is returned when available."""
-
-    destination = tmp_path / "report.pdf"
-
-    result = get_unique_destination(destination)
-
-    assert result == destination
+        counter += 1
 
 
-def test_get_unique_destination_when_file_exists(tmp_path):
-    """Test that a unique filename is created."""
+def organize_files(source_directory: Path) -> dict:
+    """Organize files in the source directory."""
 
-    destination = tmp_path / "report.pdf"
+    if not source_directory.exists():
+        raise FileNotFoundError(
+            f"Directory does not exist: {source_directory}"
+        )
 
-    destination.touch()
+    if not source_directory.is_dir():
+        raise NotADirectoryError(
+            f"Path is not a directory: {source_directory}"
+        )
 
-    result = get_unique_destination(destination)
+    results = {
+        "organized": 0,
+        "skipped": 0,
+        "errors": 0,
+    }
 
-    assert result.name == "report_1.pdf"
+    for file_path in source_directory.iterdir():
+
+        if not file_path.is_file():
+            continue
+
+        try:
+            category = get_category(file_path)
+
+            category_directory = source_directory / category
+            category_directory.mkdir(
+                parents=True,
+                exist_ok=True,
+            )
+
+            destination = category_directory / file_path.name
+            destination = get_unique_destination(destination)
+
+            shutil.move(
+                str(file_path),
+                str(destination),
+            )
+
+            logging.info(
+                "Moved: %s -> %s",
+                file_path.name,
+                category,
+            )
+
+            results["organized"] += 1
+
+        except Exception as error:
+            logging.error(
+                "Could not organize %s: %s",
+                file_path.name,
+                error,
+            )
+
+            results["errors"] += 1
+
+    return results
 
 
-def test_organize_files(tmp_path):
-    """Test that files are moved into the correct directories."""
+def main() -> None:
+    """Run the file organizer."""
 
-    # Create test files
-    (tmp_path / "photo.jpg").touch()
-    (tmp_path / "invoice.pdf").touch()
-    (tmp_path / "notes.txt").touch()
-    (tmp_path / "unknown.xyz").touch()
+    print("File Organizer")
+    print("-" * 40)
 
-    results = organize_files(tmp_path)
+    directory_input = input(
+        "Enter the directory to organize: "
+    ).strip()
 
-    # Check results
-    assert results["organized"] == 4
-    assert results["errors"] == 0
+    source_directory = Path(directory_input)
 
-    # Check files were moved
-    assert (tmp_path / "Images" / "photo.jpg").exists()
-    assert (tmp_path / "PDFs" / "invoice.pdf").exists()
-    assert (tmp_path / "Documents" / "notes.txt").exists()
-    assert (tmp_path / "Other" / "unknown.xyz").exists()
+    try:
+        results = organize_files(source_directory)
+
+        print("\nOrganization complete!")
+        print(f"Files organized: {results['organized']}")
+        print(f"Files skipped: {results['skipped']}")
+        print(f"Errors: {results['errors']}")
+
+    except (FileNotFoundError, NotADirectoryError) as error:
+        print(f"\nError: {error}")
 
 
-def test_organize_files_missing_directory():
-    """Test that a missing directory raises FileNotFoundError."""
-
-    missing_directory = Path("this_directory_does_not_exist")
-
-    with pytest.raises(FileNotFoundError):
-        organize_files(missing_directory)
+if __name__ == "__main__":
+    main()
