@@ -35,7 +35,6 @@ if missing_columns:
 def calculate_revenue(dataframe: pd.DataFrame) -> pd.DataFrame:
     """Calculate revenue for each sales record."""
 
-```
 dataframe = dataframe.copy()
 
 dataframe["Revenue"] = (
