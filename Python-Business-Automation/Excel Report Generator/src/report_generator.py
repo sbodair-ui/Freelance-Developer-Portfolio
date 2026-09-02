@@ -23,62 +23,57 @@ def load_sales_data(file_path: Path) -> pd.DataFrame:
 def validate_sales_data(dataframe: pd.DataFrame) -> None:
     """Validate that the required columns exist."""
 
-missing_columns = REQUIRED_COLUMNS - set(dataframe.columns)
+    missing_columns = REQUIRED_COLUMNS - set(dataframe.columns)
 
     if missing_columns:
-    missing = ", ".join(sorted(missing_columns))
+        missing = ", ".join(sorted(missing_columns))
 
     raise ValueError(
         f"Missing required columns: {missing}"
     )
 
 def calculate_revenue(dataframe: pd.DataFrame) -> pd.DataFrame:
-"""Calculate revenue for each sales record."""
+    """Calculate revenue for each sales record."""
 
-```
-dataframe = dataframe.copy()
+    dataframe = dataframe.copy()
 
-dataframe["Revenue"] = (
+    dataframe["Revenue"] = (
     dataframe["Quantity"]
     * dataframe["Unit Price"]
 )
 
-return dataframe
-```
+    return dataframe
 
 def calculate_business_metrics(
 dataframe: pd.DataFrame,
 ) -> dict:
-"""Calculate key business metrics."""
+    """Calculate key business metrics."""
 
-```
-total_revenue = dataframe["Revenue"].sum()
+    total_revenue = dataframe["Revenue"].sum()
 
-total_orders = len(dataframe)
+    total_orders = len(dataframe)
 
-total_units_sold = dataframe["Quantity"].sum()
+    total_units_sold = dataframe["Quantity"].sum()
 
-average_order_value = (
+    average_order_value = (
     total_revenue / total_orders
     if total_orders > 0
     else 0
 )
 
-return {
+    return {
     "Total Revenue": total_revenue,
     "Total Orders": total_orders,
     "Total Units Sold": total_units_sold,
     "Average Order Value": average_order_value,
 }
-```
 
 def analyze_product_performance(
 dataframe: pd.DataFrame,
 ) -> pd.DataFrame:
-"""Analyze sales performance by product."""
+    """Analyze sales performance by product."""
 
-```
-product_performance = (
+    product_performance = (
     dataframe.groupby("Product")
     .agg(
         Total_Units_Sold=(
@@ -97,16 +92,14 @@ product_performance = (
     )
 )
 
-return product_performance
-```
+    return product_performance
 
 def analyze_category_performance(
 dataframe: pd.DataFrame,
 ) -> pd.DataFrame:
-"""Analyze sales performance by category."""
+    """Analyze sales performance by category."""
 
-```
-category_performance = (
+    category_performance = (
     dataframe.groupby("Category")
     .agg(
         Total_Units_Sold=(
@@ -125,8 +118,7 @@ category_performance = (
     )
 )
 
-return category_performance
-```
+    return category_performance
 
 def generate_excel_report(
 metrics: dict,
@@ -134,20 +126,19 @@ product_performance: pd.DataFrame,
 category_performance: pd.DataFrame,
 output_file: Path,
 ) -> None:
-"""Generate a multi-sheet Excel business report."""
+    """Generate a multi-sheet Excel business report."""
 
-```
-summary_dataframe = pd.DataFrame(
+    summary_dataframe = pd.DataFrame(
     list(metrics.items()),
     columns=["Metric", "Value"],
 )
 
-with pd.ExcelWriter(
+    with pd.ExcelWriter(
     output_file,
     engine="openpyxl",
 ) as writer:
 
-    summary_dataframe.to_excel(
+        summary_dataframe.to_excel(
         writer,
         sheet_name="Summary",
         index=False,
@@ -164,12 +155,10 @@ with pd.ExcelWriter(
         sheet_name="Category Performance",
         index=False,
     )
-```
 
 def main() -> None:
-"""Run the Excel Report Generator."""
+    """Run the Excel Report Generator."""
 
-```
 project_directory = Path(__file__).resolve().parent.parent
 
 input_file = (
@@ -242,6 +231,6 @@ except (
     print(f"\nError: {error}")
 
 if __name__ == "__main__":
-main()
+    main()
 
 
