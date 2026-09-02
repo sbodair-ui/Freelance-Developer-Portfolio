@@ -11,30 +11,26 @@ REQUIRED_COLUMNS = {
 }
 
 def load_sales_data(file_path: Path) -> pd.DataFrame:
-"""Load sales data from an Excel file."""
+    """Load sales data from an Excel file."""
 
-```
-if not file_path.exists():
-    raise FileNotFoundError(
+    if not file_path.exists():
+        raise FileNotFoundError(
         f"Sales data file not found: {file_path}"
     )
 
-return pd.read_excel(file_path)
-```
+    return pd.read_excel(file_path)
 
 def validate_sales_data(dataframe: pd.DataFrame) -> None:
-"""Validate that the required columns exist."""
+    """Validate that the required columns exist."""
 
-```
 missing_columns = REQUIRED_COLUMNS - set(dataframe.columns)
 
-if missing_columns:
+    if missing_columns:
     missing = ", ".join(sorted(missing_columns))
 
     raise ValueError(
         f"Missing required columns: {missing}"
     )
-```
 
 def calculate_revenue(dataframe: pd.DataFrame) -> pd.DataFrame:
 """Calculate revenue for each sales record."""
