@@ -38,7 +38,7 @@ def calculate_revenue(dataframe: pd.DataFrame) -> pd.DataFrame:
     dataframe = dataframe.copy()
 
     dataframe["Revenue"] = (
-    dataframe["Quantity"]
+    dataframe["Units Sold"]
     * dataframe["Unit Price"]
 )
 
@@ -53,7 +53,7 @@ dataframe: pd.DataFrame,
 
     total_orders = len(dataframe)
 
-    total_units_sold = dataframe["Quantity"].sum()
+    total_units_sold = dataframe["Units Sold"].sum()
 
     average_order_value = (
     total_revenue / total_orders
@@ -77,7 +77,7 @@ dataframe: pd.DataFrame,
     dataframe.groupby("Product")
     .agg(
         Total_Units_Sold=(
-            "Quantity",
+            "Units Sold",
             "sum",
         ),
         Total_Revenue=(
@@ -103,7 +103,7 @@ dataframe: pd.DataFrame,
     dataframe.groupby("Category")
     .agg(
         Total_Units_Sold=(
-            "Quantity",
+            "Units Sold",
             "sum",
         ),
         Total_Revenue=(
