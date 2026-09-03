@@ -28,7 +28,7 @@ def validate_sales_data(dataframe: pd.DataFrame) -> None:
     if missing_columns:
         missing = ", ".join(sorted(missing_columns))
 
-    raise ValueError(
+        raise ValueError(
         f"Missing required columns: {missing}"
     )
 
