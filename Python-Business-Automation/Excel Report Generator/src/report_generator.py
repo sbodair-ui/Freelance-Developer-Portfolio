@@ -120,42 +120,42 @@ dataframe: pd.DataFrame,
 
     return category_performance
 
-def generate_excel_report(
-metrics: dict,
-product_performance: pd.DataFrame,
-category_performance: pd.DataFrame,
-output_file: Path,
+ddef generate_excel_report(
+    metrics: dict,
+    product_performance: pd.DataFrame,
+    category_performance: pd.DataFrame,
+    output_file: Path,
 ) -> None:
     """Generate a multi-sheet Excel business report."""
 
     summary_dataframe = pd.DataFrame(
-    list(metrics.items()),
-    columns=["Metric", "Value"],
-)
+        list(metrics.items()),
+        columns=["Metric", "Value"],
+    )
 
     with pd.ExcelWriter(
-    output_file,
-    engine="openpyxl",
-) as writer:
+        output_file,
+        engine="openpyxl",
+    ) as writer:
 
         summary_dataframe.to_excel(
-        writer,
-        sheet_name="Summary",
-        index=False,
-    )
+            writer,
+            sheet_name="Summary",
+            index=False,
+        )
 
-    product_performance.to_excel(
-        writer,
-        sheet_name="Product Performance",
-        index=False,
-    )
+        product_performance.to_excel(
+            writer,
+            sheet_name="Product Performance",
+            index=False,
+        )
 
-    category_performance.to_excel(
-        writer,
-        sheet_name="Category Performance",
-        index=False,
-    )
-
+        category_performance.to_excel(
+            writer,
+            sheet_name="Category Performance",
+            index=False,
+        )
+        
 def main() -> None:
     """Run the Excel Report Generator."""
 
