@@ -6,7 +6,7 @@ REQUIRED_COLUMNS = {
 "Date",
 "Product",
 "Category",
-"Quantity",
+"Units Sold",
 "Unit Price",
 }
 
