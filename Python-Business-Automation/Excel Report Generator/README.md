@@ -220,7 +220,7 @@ Potential future enhancements include:
 
 ## 👨‍💻 Author
 
-**Stephen Bodair**
+**Stephen ODair**
 
 Freelance Developer | Python Automation | Business Solutions
 
