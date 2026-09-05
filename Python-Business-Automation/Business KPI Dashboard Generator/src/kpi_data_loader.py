@@ -35,7 +35,7 @@ def load_business_data(file_path):
 
     data = pd.read_csv(file_path)
 
-    validate_columns(data)
+    validate_business_data(data)
 
     data["Date"] = pd.to_datetime(data["Date"])
 
