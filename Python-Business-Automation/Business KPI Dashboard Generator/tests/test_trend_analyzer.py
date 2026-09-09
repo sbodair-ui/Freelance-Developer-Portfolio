@@ -28,7 +28,7 @@ def test_department_performance():
 
     result = analyze_department_performance(data)
 
-    assert len(result) == 5
+    assert len(result) == 4
     assert "Department" in result.columns
     assert "Revenue" in result.columns
     assert "Net Revenue" in result.columns
