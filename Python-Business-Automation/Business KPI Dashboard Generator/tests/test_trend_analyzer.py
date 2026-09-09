@@ -39,7 +39,7 @@ def test_product_performance():
 
     result = analyze_product_performance(data)
 
-    assert len(result) == 4
+    assert len(result) == 5
     assert "Product" in result.columns
     assert "Revenue" in result.columns
     assert "Net Revenue" in result.columns
