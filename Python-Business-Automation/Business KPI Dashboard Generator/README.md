@@ -91,14 +91,14 @@ The application generates:
 ## 🏗️ Project Structure
 
 ```text
-Business-KPI-Dashboard-Generator/
+Business KPI Dashboard Generator/
 │
 ├── README.md
 ├── requirements.txt
 │
 ├── src/
 │   ├── __init__.py
-│   ├── data_loader.py
+│   ├── kpi_data_loader.py
 │   ├── kpi_calculator.py
 │   ├── trend_analyzer.py
 │   ├── chart_generator.py
@@ -106,7 +106,7 @@ Business-KPI-Dashboard-Generator/
 │
 ├── tests/
 │   ├── __init__.py
-│   ├── test_data_loader.py
+│   ├── test_kpi_data_loader.py
 │   ├── test_kpi_calculator.py
 │   ├── test_trend_analyzer.py
 │   └── test_dashboard_generator.py
@@ -117,9 +117,9 @@ Business-KPI-Dashboard-Generator/
 └── output/
     ├── dashboard.xlsx
     ├── kpi_summary.csv
-    ├── revenue_trend.png
+    ├── monthly_revenue_trend.png
     ├── department_performance.png
-    └── monthly_performance.png
+    └── product_performance.png
 ```
 
 ---
