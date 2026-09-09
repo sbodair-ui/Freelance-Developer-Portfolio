@@ -1,4 +1,4 @@
-# 📊 Business KPI Dashboard Generator
+# Business KPI Dashboard Generator
 
 ## Overview
 
@@ -30,67 +30,61 @@ Trend Analysis
 Visualization
         ↓
 Dashboard & Reports
-```
+✨ Features
+Data Processing
+Load business data from CSV files
+Validate required columns
+Validate numeric business data
+Detect negative financial and quantity values
+Reject empty datasets
+Prepare data for analysis
+KPI Analysis
 
----
+The dashboard calculates seven primary business KPIs:
 
-## ✨ Features
+Total Revenue
+Total Expenses
+Net Revenue
+Profit Margin
+Total Units
+Total Transactions
+Average Transaction Value
 
-### Data Processing
+The application also calculates:
 
-* Load business data from CSV files
-* Validate required columns
-* Detect invalid or missing data
-* Prepare data for analysis
-
-### KPI Analysis
-
-The dashboard calculates:
-
-* Total Revenue
-* Total Expenses
-* Net Revenue
-* Profit Margin
-* Total Transactions
-* Average Transaction Value
-* Monthly Revenue
-* Monthly Expenses
-* Monthly Net Revenue
-
-### Business Performance Analysis
-
-* Department performance
-* Revenue trends
-* Expense trends
-* Profit trends
-* Monthly performance
-* Performance comparisons
-
-### Visualization
-
-Generate charts for:
-
-* Revenue trends
-* Expense trends
-* Net revenue trends
-* Department performance
-* Monthly performance
-
-### Automated Reporting
+Monthly Revenue
+Monthly Expenses
+Monthly Net Revenue
+Monthly Profit Margin
+Department Performance
+Product Performance
+Business Performance Analysis
+Department performance
+Product performance
+Revenue trends
+Expense trends
+Profit trends
+Monthly performance
+Performance comparisons
+Visualization
 
 The application generates:
 
-* KPI summary
-* Performance analysis
-* Charts
-* Excel dashboard
-* Supporting CSV reports
+Monthly revenue trend chart
+Department performance chart
+Product performance chart
+Automated Reporting
 
----
+The application generates:
 
-## 🏗️ Project Structure
-
-```text
+KPI summary
+Monthly performance analysis
+Department performance analysis
+Product performance analysis
+Business performance charts
+Excel dashboard
+Supporting CSV report
+🏗️ Project Structure
 Business KPI Dashboard Generator/
 │
 ├── README.md
@@ -120,237 +114,218 @@ Business KPI Dashboard Generator/
     ├── monthly_revenue_trend.png
     ├── department_performance.png
     └── product_performance.png
-```
+🔄 Application Workflow
+                     Business Data
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │   Data Loader   │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │ Data Validation │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │ KPI Calculator  │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │ Trend Analyzer  │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │ Chart Generator │
+                  └────────┬────────┘
+                           │
+                           ▼
+                 ┌───────────────────┐
+                 │ Dashboard         │
+                 │ Generator         │
+                 └─────────┬─────────┘
+                           │
+                           ▼
+                    Output Reports
+📥 Input Data
 
----
+The application uses a CSV dataset containing business transaction information.
 
-## 🔄 Application Workflow
+Data Fields
+Column	Description
+Date	Transaction date
+Department	Business department
+Product	Product or service
+Revenue	Revenue generated
+Expenses	Associated expenses
+Units	Number of units
+Transactions	Number of transactions
 
-```text
-                 Business Data
-                      │
-                      ▼
-              ┌───────────────┐
-              │  Data Loader  │
-              └───────┬───────┘
-                      │
-                      ▼
-              ┌───────────────┐
-              │ Data Validation│
-              └───────┬───────┘
-                      │
-                      ▼
-              ┌───────────────┐
-              │ KPI Calculator│
-              └───────┬───────┘
-                      │
-              ┌───────┴────────┐
-              ▼                ▼
-       Trend Analysis    Performance
-              │            Analysis
-              └───────┬────────┘
-                      ▼
-              ┌───────────────┐
-              │Chart Generator│
-              └───────┬───────┘
-                      │
-                      ▼
-            Dashboard Generator
-                      │
-                      ▼
-                Output Reports
-```
+The included sample dataset contains demonstration business data and does not contain personally identifiable information.
 
----
+📤 Generated Output
 
-## 📥 Input Data
+The application generates a collection of business reporting files.
 
-The application will use a CSV dataset containing business transaction information.
-
-Example fields include:
-
-| Column       | Description            |
-| ------------ | ---------------------- |
-| Date         | Transaction date       |
-| Department   | Business department    |
-| Product      | Product or service     |
-| Revenue      | Revenue generated      |
-| Expenses     | Associated expenses    |
-| Units        | Number of units        |
-| Transactions | Number of transactions |
-
-The sample dataset will contain realistic demonstration data and will not contain personally identifiable information.
-
----
-
-## 📤 Generated Output
-
-The application will generate a collection of business reporting files.
-
-### Excel Dashboard
-
-```text
+Excel Dashboard
 dashboard.xlsx
-```
 
-Containing:
+The Excel dashboard contains four worksheets:
 
-* KPI Summary
-* Monthly Performance
-* Department Performance
-* Supporting Data
-
-### KPI Summary
-
-```text
+KPI Summary
+Monthly Performance
+Department Performance
+Product Performance
+KPI Summary
 kpi_summary.csv
-```
 
-Contains the calculated business metrics.
+Contains the calculated business KPIs.
 
-### Visual Reports
-
-```text
-revenue_trend.png
+Visual Reports
+monthly_revenue_trend.png
 department_performance.png
-monthly_performance.png
-```
+product_performance.png
 
-These charts provide a visual representation of business performance.
+These charts provide visual representations of business performance and trends.
 
----
-
-## 🛠️ Technologies
-
-* **Python**
-* **pandas** — data processing and analysis
-* **matplotlib** — data visualization
-* **openpyxl** — Excel report generation
-* **pytest** — automated testing
-
----
-
-## ⚙️ Installation
+🛠️ Technologies
+Python
+pandas — data processing and analysis
+matplotlib — data visualization
+openpyxl — Excel report generation
+pytest — automated testing
+⚙️ Installation
 
 Navigate to the project directory:
 
-```bash
-cd Business-KPI-Dashboard-Generator
-```
+cd "Business KPI Dashboard Generator"
 
 Install the required dependencies:
 
-```bash
 pip install -r requirements.txt
-```
+▶️ Usage
 
----
+Run the dashboard generator from the project directory:
 
-## ▶️ Usage
+python -m src.dashboard_generator
 
-Run the dashboard generator:
+The application will:
 
-```bash
-python src/dashboard_generator.py
-```
+Load the sample business data
+Validate the data
+Calculate business KPIs
+Analyze monthly, department, and product performance
+Generate charts
+Generate the Excel dashboard
+Generate the KPI summary CSV
 
-The application will process the sample business data and generate the dashboard files in the `output/` directory.
+All generated files are saved in the output/ directory.
 
----
-
-## 🧪 Testing
+🧪 Testing
 
 Run the automated test suite:
 
-```bash
 pytest
-```
 
-The tests will verify:
+The test suite verifies:
 
-* Data loading
-* Data validation
-* KPI calculations
-* Trend analysis
-* Dashboard generation
-* Output creation
+Data loading
+Required column validation
+Numeric data validation
+Business data validation
+Negative-value validation
+KPI calculations
+Monthly performance analysis
+Department performance analysis
+Product performance analysis
+Dashboard generation
+Excel workbook creation
+KPI summary generation
+Test Results
+22 passed
 
----
+The complete Project #5 test suite currently passes all 22 automated tests.
 
-## 📈 Example KPIs
+📈 Example KPIs
 
-A completed dashboard will provide metrics similar to:
+The included sample dataset produces the following results:
 
-```text
-Total Revenue:              $778,300.00
-Total Expenses:             $284,900.00
-Net Revenue:                $493,400.00
-Profit Margin:                    63.39%
-Total Units:                     1,319
-Total Transactions:              1,319
-Average Transaction Value:     $590.07
-```
+Total Revenue:                  $778,300.00
+Total Expenses:                 $284,900.00
+Net Revenue:                    $493,400.00
+Profit Margin:                       63.39%
+Total Units:                         1,319
+Total Transactions:                  1,319
+Average Transaction Value:          $590.07
 
-*Values shown above are examples and may change when the final sample dataset is generated.*
+These values are generated from the included sample dataset.
 
----
-
-## 🎓 Skills Demonstrated
+🎓 Skills Demonstrated
 
 This project demonstrates practical experience with:
 
-* Python programming
-* Data processing
-* Data validation
-* Business analytics
-* KPI development
-* Financial calculations
-* Trend analysis
-* Data visualization
-* Excel automation
-* Modular application design
-* Automated testing
-* Business reporting
-
----
-
-## 🚀 Future Improvements
+Python programming
+Data processing
+Data validation
+Business analytics
+KPI development
+Financial calculations
+Trend analysis
+Data visualization
+Excel automation
+Modular application design
+Automated testing
+Business reporting
+🚀 Future Improvements
 
 Potential Phase 2 improvements include:
 
-* Interactive dashboards
-* Command-line configuration
-* Automated scheduled reporting
-* Database integration
-* Advanced financial metrics
-* Additional visualization types
-* Configuration files
-* Enhanced logging
-* More comprehensive validation
-* Automated email delivery
-* Production-ready reporting workflows
+Interactive dashboards
+Command-line configuration
+Automated scheduled reporting
+Database integration
+Advanced financial metrics
+Additional visualization types
+Configuration files
+Enhanced logging
+More comprehensive validation
+Automated email delivery
+Production-ready reporting workflows
+📌 Project Status
 
----
+Phase 1 — Build
 
-## 📌 Project Status
+✅ Complete
 
-**Phase 1 — Build**
+The project has been fully implemented, tested, and verified.
 
-🟡 In Progress
+The complete automated test suite currently passes:
 
-The project is being developed incrementally, with each component tested before moving to the next stage.
+22 passed
 
----
+The application successfully loads the included business dataset, validates the data, calculates KPIs, analyzes business performance, generates visualizations, and produces an Excel dashboard and supporting CSV report.
 
-## 👨‍💻 Author
+👨‍💻 Author
 
-**Stephen ODair**
+Stephen ODair
 
 Freelance Software Developer
 
----
-
-## 📄 License
+📄 License
 
 This project is part of a personal software development portfolio and is intended for educational and demonstration purposes.
+
+
+### One small improvement I made intentionally
+
+I changed the old **"Monthly Revenue / Monthly Expenses / Monthly Net Revenue"** items from being presented as primary KPIs. Your actual application has **7 primary KPIs**, while monthly metrics are part of the trend analysis. That makes the README much more technically accurate.
+
+Your original README's structure and purpose were already solid; the main problem was that several sections had become outdated as you actually built the application. :contentReference[oaicite:1]{index=1}
+
+After you paste this into GitHub, **don't rerun the application just because the README changed**. Your code has already passed final verification with **22/22 tests**. The README is documentation only.
+
+Next, we can do the **Git commit + push for Project #5**, which is the final step to get this completed proj
 
