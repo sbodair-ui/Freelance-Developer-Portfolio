@@ -282,12 +282,13 @@ The tests will verify:
 A completed dashboard will provide metrics similar to:
 
 ```text
-Total Revenue:              $645,625.00
-Total Expenses:             $220,500.00
-Net Revenue:                $425,125.00
-Profit Margin:                    65.8%
-Total Transactions:              50
-Average Transaction Value:  $12,912.50
+Total Revenue:              $778,300.00
+Total Expenses:             $284,900.00
+Net Revenue:                $493,400.00
+Profit Margin:                    63.39%
+Total Units:                     1,319
+Total Transactions:              1,319
+Average Transaction Value:     $590.07
 ```
 
 *Values shown above are examples and may change when the final sample dataset is generated.*
