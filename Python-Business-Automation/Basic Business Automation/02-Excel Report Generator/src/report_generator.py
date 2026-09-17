@@ -120,7 +120,7 @@ dataframe: pd.DataFrame,
 
     return category_performance
 
-ddef generate_excel_report(
+def generate_excel_report(
     metrics: dict,
     product_performance: pd.DataFrame,
     category_performance: pd.DataFrame,
