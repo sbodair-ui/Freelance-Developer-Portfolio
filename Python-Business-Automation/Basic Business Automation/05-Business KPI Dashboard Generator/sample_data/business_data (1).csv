@@ -1,0 +1,46 @@
+Date,Department,Product,Revenue,Expenses,Units,Transactions
+2026-01-05,Sales,Software,18500,6200,37,37
+2026-01-08,Marketing,Advertising,9200,4100,12,12
+2026-01-12,Operations,Services,12800,5200,25,25
+2026-01-18,Support,Support Plans,7600,2800,19,19
+2026-01-24,Sales,Consulting,15400,5900,14,14
+2026-02-04,Sales,Software,21300,7100,43,43
+2026-02-09,Marketing,Advertising,10800,4700,15,15
+2026-02-14,Operations,Services,14100,5600,28,28
+2026-02-19,Support,Support Plans,8200,3100,21,21
+2026-02-25,Sales,Consulting,17600,6500,16,16
+2026-03-03,Sales,Software,22800,7600,46,46
+2026-03-10,Marketing,Advertising,11500,5000,16,16
+2026-03-15,Operations,Services,14900,5900,30,30
+2026-03-20,Support,Support Plans,8800,3300,22,22
+2026-03-27,Sales,Consulting,18900,6900,17,17
+2026-04-04,Sales,Software,24100,8000,48,48
+2026-04-09,Marketing,Advertising,12100,5200,17,17
+2026-04-14,Operations,Services,15700,6100,31,31
+2026-04-20,Support,Support Plans,9400,3500,24,24
+2026-04-27,Sales,Consulting,20100,7300,18,18
+2026-05-05,Sales,Software,25600,8400,51,51
+2026-05-11,Marketing,Advertising,12900,5500,18,18
+2026-05-16,Operations,Services,16500,6400,33,33
+2026-05-21,Support,Support Plans,10100,3700,25,25
+2026-05-28,Sales,Consulting,21400,7700,19,19
+2026-06-03,Sales,Software,27100,8900,54,54
+2026-06-09,Marketing,Advertising,13600,5800,19,19
+2026-06-14,Operations,Services,17400,6700,35,35
+2026-06-20,Support,Support Plans,10800,3900,27,27
+2026-06-27,Sales,Consulting,22800,8100,20,20
+2026-07-04,Sales,Software,28600,9300,57,57
+2026-07-10,Marketing,Advertising,14300,6100,20,20
+2026-07-15,Operations,Services,18300,7000,37,37
+2026-07-21,Support,Support Plans,11500,4100,29,29
+2026-07-28,Sales,Consulting,24200,8500,21,21
+2026-08-04,Sales,Software,30100,9700,60,60
+2026-08-10,Marketing,Advertising,15000,6400,21,21
+2026-08-15,Operations,Services,19200,7300,39,39
+2026-08-21,Support,Support Plans,12200,4300,31,31
+2026-08-28,Sales,Consulting,25600,8900,22,22
+2026-09-03,Sales,Software,31600,10100,63,63
+2026-09-03,Marketing,Advertising,15700,6700,22,22
+2026-09-03,Operations,Services,20100,7600,41,41
+2026-09-03,Support,Support Plans,12900,4500,33,33
+2026-09-03,Sales,Consulting,27000,9300,23,23
