@@ -1,3 +1,4 @@
+
 from pathlib import Path
 
 
@@ -15,4 +16,5 @@ def get_files(folder_path):
             files.append(item)
 
     return files
+
 
