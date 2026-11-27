@@ -21,5 +21,5 @@ def main():
   print("----------------------------")
   print(f"Total files found: {len(files)}")
 
-if__name__ == "__main__":
-main()
+if __name__ == "__main__":
+  main()
