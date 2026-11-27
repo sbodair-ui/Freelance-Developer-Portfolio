@@ -16,7 +16,7 @@ def main():
   print("----------------------------")
 
   for file in files:
-    print(files.name)
+    print(file.name)
 
   print("----------------------------")
   print(f"Total files found: {len(files)}")
